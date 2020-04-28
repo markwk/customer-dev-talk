@@ -1,6 +1,6 @@
 # Customer Development: Principles and Tactics for Startups
 
-TODO
+Slides and references for a talk on customer development, discovery and validation for early-stage startup. 
 
 **Contents**
 
@@ -14,22 +14,28 @@ TODO
 
 ### Description
 
-TODO
+Coming Soon!
 
 ### [Slides](https://markwk.github.io/ts4health/slides/slides.html)
 
-- [View the most up-to-date slides here](). NOTE: Press "S" to view it in speaker mode and see additional talk notes and references. 
-- [View Slides text in markdown]().
+- [View the most up-to-date slides here](https://markwk.github.io/customer-dev-talk/slides/slides.html#/slides). NOTE: Press "S" to view it in speaker mode and see additional talk notes and references. 
+- [View Slides text in markdown](https://github.com/markwk/customer-dev-talk/blob/master/slides/slides.md).
 
 ### References
 
-#### Published References
+#### Resources and Book Recommendations
 
-- TODO
+- Steve Blank & Bob Dorf - Startup Owners Manual (2012)
+- https://steveblank.com/tools-and-blogs-for-entrepreneurs/
+- Dan Shapiro - Hot Seat (2015). 
+- David Rose - The Startup Checklist. (2016).
+- Gabriel Weinberg - Traction: How Any Startup Can Achieve Explosive Customer Growth
+- Blog www.markwk.com 
 
-#### Internet Resources
+#### Additional References
 
-- TODO
+- Bygrave, W. D., Lange, J., Mollov, A., Pearlmutter, M., & Singh, S. (2007). Pre-startup formal business plans and post-startup performance: a study of 116 new ventures. Venture Capital Journal, 9(4), 1-20.
+- Chesbrough, H., & Rosenbloom, R. S. (2002). The role of the business model in capturing value from innovation: evidence from Xerox Corporation’s technology spin‐off companies. Industrial and corporate change, 11(3), 529-555.
 
 ### About Speaker
 
