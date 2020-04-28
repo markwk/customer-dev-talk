@@ -18,7 +18,7 @@ Coming Soon!
 
 ### [Slides](https://markwk.github.io/ts4health/slides/slides.html)
 
-- [View the most up-to-date slides here](https://markwk.github.io/customer-dev-talk/slides/slides.html#/slides). NOTE: Press "S" to view it in speaker mode and see additional talk notes and references. 
+- [View the most up-to-date slides here](https://markwk.github.io/customer-dev-talk/slides/slides.html). NOTE: Press "S" to view it in speaker mode and see additional talk notes and references. 
 - [View Slides text in markdown](https://github.com/markwk/customer-dev-talk/blob/master/slides/slides.md).
 
 ### References
