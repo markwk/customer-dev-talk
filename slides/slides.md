@@ -307,6 +307,8 @@ By understanding the <u>problem</u>, you can...
 
 ### Iterate: Focus or Pivot. 
 
+![](images/customer-development-process.png){ width=80%}
+
 
 
 ### Where to find people/prospects to interview? 
@@ -356,9 +358,29 @@ TIP: Validation Board from Lean Startup Machine.
 
 
 
+### Customer development is about more than the customer. 
+
+- It's about exploring the dimensions of your business model and ecosystem in an inexpensive, agile and opportunistic way. 
+
+- It's about testing the validity of your most important assumptions. 
+- It's about dealing with your uncertainties. 
+
+
+
 # Summary
 
-- 
+- All startups face uncertainties. Own your assumptions. 
+- Turn assumptions and guesses into facts and knowledge ASAP. 
+- Get out of the building (or into a zoom call!) and talk to customers. 
+- Customer Development is intended as a systematic process towards dealing with uncertainty and reaching product-market fit (i.e. products that matter, sell and that VC want to invest in). 
+
+
+
+#
+
+> No campaign plan survives first contact with the enemy - Field Marshall Helmuth Graf von Moltke
+
+>  No Plan Survives First Contact With Customers - Steve Blank
 
 
 
