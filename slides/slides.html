@@ -1,347 +1,689 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="generator" content="pandoc">
-  <meta name="author" content="Mark Koester">
-  <title>Customer Development</title>
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="https://revealjs.com/css/reset.css">
-  <link rel="stylesheet" href="https://revealjs.com/css/reveal.css">
-  <style>
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <link rel="stylesheet" href="https://revealjs.com/css/theme/league.css" id="theme">
-  <!-- Printing and PDF exports -->
-  <script>
-    var link = document.createElement( 'link' );
-    link.rel = 'stylesheet';
-    link.type = 'text/css';
-    link.href = window.location.search.match( /print-pdf/gi ) ? 'https://revealjs.com/css/print/pdf.css' : 'https://revealjs.com/css/print/paper.css';
-    document.getElementsByTagName( 'head' )[0].appendChild( link );
-  </script>
-  <!--[if lt IE 9]>
-  <script src="https://revealjs.com/lib/js/html5shiv.js"></script>
-  <![endif]-->
-</head>
-<body>
-  <div class="reveal">
-    <div class="slides">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta name="author" content="Mark Koester" />
+    <title>Customer Development</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"
+    />
+    <link rel="stylesheet" href="reveal.js/css/reset.css" />
+    <link rel="stylesheet" href="reveal.js/css/reveal.css" />
+    <style>
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+    <link rel="stylesheet" href="reveal.js/css/theme/league.css" id="theme" />
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "reveal.js/css/print/pdf.css"
+        : "reveal.js/css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+    <!--[if lt IE 9]>
+      <script src="reveal.js/lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section id="title-slide">
+          <h1 class="title">Customer Development</h1>
+          <p class="author">Mark Koester</p>
+          <p class="date">Startup Boost, April 28, 2020</p>
+        </section>
 
-<section id="title-slide">
-  <h1 class="title">Customer Development</h1>
-  <p class="author">Mark Koester</p>
-  <p class="date">Startup Boost, April 28, 2020</p>
-</section>
-
-<section id="customer-development-principles-and-tactics-for-startups" class="slide level2">
-<h2>Customer Development <br/> Principles and Tactics<br/> for Startups</h2>
-<p>
-Mark Koester | www.markwk.com <br/> Startup Boost, April 28, 2020<br/><br/> Slides and References: github.com/markwk/customer-dev-talk
-</p>
-</section>
-<section id="slides" class="title-slide slide level1"><h1>Slides:</h1><p>github.com/markwk/customer-dev-talk</p></section>
-<section id="section" class="title-slide slide level1"><h1></h1><blockquote>
-<p>The core of Customer Development is blissfully simple: Products developed by founders who get out in front of customers early and often, win.</p>
-<p><small>Steve Blank</small></p>
-</blockquote></section>
-<section id="agenda" class="title-slide slide level1"><h1>Agenda</h1><ul>
-<li>About Me</li>
-<li>Key Concepts</li>
-<li>Example / Story</li>
-<li>Principles</li>
-<li>Tactics</li>
-<li>Resources</li>
-</ul></section>
-<section id="about-me" class="title-slide slide level1"><h1>About Me</h1><p>Mark Koester</p>
-<ul>
-<li>I’m a “Startup Generalist” who focuses on customers and product.</li>
-<li>Technical Consultant and PM @ Int3c.com</li>
-<li>Former: Regional Development (Greater China) at Techstars and Up Global (acquired)</li>
-<li>Blog: www.markwk.com | Products: www.markwk.com/products | Biz: Int3c.com | Code: github.com/markwk</li>
-</ul></section>
-<section><section id="key-concepts" class="title-slide slide level1"><h1>Key Concepts</h1><p>(or my own assumptions for what we are taking about)</p></section><section class="slide level2">
-
-<h3 id="startup">Startup</h3>
-<blockquote>
-<p>a series of untested hypothesis and assumptions</p>
-</blockquote>
-<aside class="notes">
-<p>Put another way: <strong>Startups / founders / entrepreneurs exist to deal with uncertainty</strong>.</p>
-<p>Steve Blank and other have shown that traditional business management processes and planning developed in MBA programs are not suited for startups, because startups operate in uncertainy.</p>
-<blockquote>
-<p>A startup is a temporary organization in search of a scalable, repeatable, profitable business model. (Blank, 2012)</p>
-</blockquote>
-<blockquote>
-<p>In sharp contrast, startups operate in “search” mode, seeking a repeatable and profitable business model. The search for a business model requires dramatically different rules, roadmaps, skill sets, and tools in order to minimize risk and optimize chances for success. (Blank, 2012)</p>
-</blockquote>
-<p>SEE: Blank, S. G., &amp; Dorf, B. (2012). The Startup Owner’s Manual.</p>
-</aside>
-</section><section class="slide level2">
-
-<h3 id="customer-development">Customer Development</h3>
-<blockquote>
-<p>a process to organize the search for a business model, find product-market fit, understand your customers, etc.</p>
-</blockquote>
-<p><br/></p>
-<p><small>Originated with Steve Blank and popularized by Eric Reis and Lean Startup. Dovetails well with many aspects of UX. </small></p>
-<aside class="notes">
-<p>Steve Blank and others strive to make this an almost scientific process but it still very much an art rather than a purely empirical science.</p>
-</aside>
-</section><section class="slide level2">
-
-<h3 id="two-phases-of-customer-development">Two Phases of Customer Development</h3>
-<ol type="1">
-<li>Customer discovery = “acquiring a deep understanding of customer needs”</li>
-<li>Customer validation = process to invalidate/prove other aspects of your biz model like sales desire and traction channels</li>
-</ol>
-</section><section class="slide level2">
-
-<h3 id="pivot">Pivot</h3>
-<ul>
-<li>Change in one of more business model components</li>
-</ul>
-<p><br /></p>
-<p><small>Eric Ries / Lean Startup: a “structured course correction designed to test a new fundamental hypothesis about the product, strategy, and engine of growth.”</small></p>
-<aside class="notes">
-
-</aside>
-</section><section class="slide level2">
-
-<h3 id="section-1"></h3>
-<blockquote>
-<p>In practice, startups begin with a set of initial hypotheses (guesses), most of which will end up being wrong. Therefore, focusing on execution and delivering a product or service based on those initial, untested hypotheses is a going-out-of-business strategy.</p>
-<p><small>Steve Blank</small></p>
-</blockquote>
-<p>= Overemphasis on deliverables and product, underemphesis on users and customers.</p>
-<aside class="notes">
-<p>Overemphasis on deliverables and product</p>
-<p>Startups and entrepeneurs tend to focus on what we build, do and deliver and forget to spend as much time, energy and thought on customer discovery.</p>
-</aside>
-</section><section class="slide level2">
-
-<h3 id="objective-of-customer-development">Objective of Customer Development</h3>
-<p>Turn assumptions and guesses into facts and knowledge ASAP.</p>
-<aside class="notes">
-<p>Best combined with agile product development</p>
-</aside>
-</section><section class="slide level2">
-
-<h3 id="how-to-customer-development">How-To Customer Development =</h3>
-<p>Talk to customers.</p>
-</section></section>
-<section id="example" class="title-slide slide level1"><h1>Example</h1><ul>
-<li>Finding, Understanding and Selling Sponsorship Customers for Up Global and Techstars in China (2014-2016)</li>
-<li>Assumptions from US</li>
-<li>What I Did</li>
-<li>Discoveries / Lessons Learned</li>
-</ul>
-<aside class="notes">
-<ul>
-<li>Finding, Understanding and Selling Sponsorship Customers for Up Global and Techstars in China (2014-2016)</li>
-<li>Assumptions from US: We need a lot of events to get sponsorship, i.e. event volume drives sponsorship.</li>
-<li>Talked to nearly all of the existing, past and potential sponsors.</li>
-<li>Discovered we weren’t fulfilling various sponsorship needs for Chinese Market.</li>
-<li>Lessons Learned: Sponsorship match/alignment was more important than volume and consistent business development could unlock $$$.</li>
-</ul>
-</aside></section>
-<section><section id="principles" class="title-slide slide level1"><h1>Principles</h1></section><section id="markets-with" class="slide level3">
-<h3>Markets with…</h3>
-<ul>
-<li>Invention / Technology Risk (questionable if tech can be done or invented).</li>
-<li>Customer/Market Risk (unknown if customers will adopt and/or pay product/service)</li>
-</ul>
-</section><section id="customer-development-process" class="slide level3">
-<h3>Customer Development Process</h3>
-<p><img data-src="images/customer-development-process.png" style="width:80.0%" /></p>
-</section><section id="customer-discovery-process" class="slide level3">
-<h3>Customer Discovery Process</h3>
-<p><img data-src="images/customer-discovery-process.png" style="width:80.0%" /></p>
-</section><section id="customer-validation-process" class="slide level3">
-<h3>Customer Validation Process</h3>
-<p><img data-src="images/customer-validation-process.png" style="width:80.0%" /></p>
-</section><section id="section-2" class="slide level3">
-<h3></h3>
-<p>The <u>key</u> to customer discovery…</p>
-<h1>
-TALKING
-</h1>
-<p>to customers</p>
-</section><section id="section-3" class="slide level3">
-<h3></h3>
-<p>By understanding the <u>problem</u>, you can…</p>
-<h2>
-Understand the solution.
-</h2>
-</section></section>
-<section><section id="tactics" class="title-slide slide level1"><h1>Tactics</h1></section><section id="own-your-assumptions." class="slide level3">
-<h3>Own your assumptions.</h3>
-<ul>
-<li>What are your assumptions that, if invalidated, will break the business?</li>
-<li>Business Model Canvas = use to lay out your key assumptions to test</li>
-<li>Market Sizing = talk to customers from your target markets, use to explore definition of markets (overall, addressable and target)</li>
-</ul>
-</section><section id="get-out-of-the-building." class="slide level3">
-<h3>Get out of the Building.</h3>
-</section><section id="focus-on-learning-and-helping-rather-than-selling" class="slide level3">
-<h3>Focus on learning and helping, rather than selling</h3>
-</section><section id="customer-interview" class="slide level3">
-<h3>Customer Interview</h3>
-<ol type="1">
-<li>Person</li>
-<li>Problem</li>
-<li>Solution</li>
-</ol>
-</section><section id="mvp-house" class="slide level3">
-<h3>MVP House</h3>
-<p><img data-src="images/mvp-house.png" style="width:80.0%" /></p>
-</section><section id="the-person" class="slide level3">
-<h3>1. The Person</h3>
-<ul>
-<li>Who are they? What is their role? Backgound? Etc.</li>
-<li>If business product, who is their boss? who works for them?</li>
-<li>What is a typical day like? How do they spend their time?</li>
-</ul>
-<p><u>Goal: Get a broad background understanding of the person. Develop a relationship. Stay broad.</u></p>
-</section><section id="the-problem" class="slide level3">
-<h3>2. The Problem</h3>
-<ul>
-<li>Learn about the problems that person recognizes and verbalizes.</li>
-<li>What are the top three challenges they face?</li>
-<li>What is frustrating, expensive or time consuming?</li>
-<li>What would they change right now?</li>
-<li>How are they solving them? Competitors? DIY tools and workarounds?</li>
-</ul>
-<p><u>Goal: Get them to verbalize the problem you want to solve (preferrably unprompted)</u></p>
-</section><section id="the-solution" class="slide level3">
-<h3>3. The Solution</h3>
-<ul>
-<li>Assuming you’ve gotten them to identify with your problem, then…</li>
-<li>Reveal your solution (either as a concept or prototype or product)</li>
-<li>Read their reactions as well as their words to capturee their level of interest.</li>
-<li>HINT: “That’s interesting” = kiss of death</li>
-</ul>
-<p><u>Goal: Discover if they want your solution and gather feedback.</u></p>
-</section><section id="tips-for-customer-interviews-1" class="slide level3">
-<h3>Tips for Customer Interviews (1)</h3>
-<ul>
-<li>Turn assumptions into customer questions.</li>
-<li>Create a script of your key questions.</li>
-<li>Work as team (customer development is the job of entire founding team).</li>
-<li>Take detailed notes (and consider recording)</li>
-<li>Use a Google form to log key responses.</li>
-<li>Be empathetic with interviewee and go off script when needed.</li>
-<li><u>If they are excited about something, ask if they’ll pay for</u>.</li>
-</ul>
-</section><section id="tips-for-customer-interviews-2" class="slide level3">
-<h3>Tips for Customer Interviews (2)</h3>
-<ul>
-<li>Be open-ended.</li>
-<li>Show them early prototypes (if you have them and if they indicated a desire for it).</li>
-<li>Always follow-up.</li>
-<li>End with an ask (intro to someone else to interview, join mailing list, etc.).</li>
-<li>Review and Summarize, esp Extract key quotes and look for patterns and clusters</li>
-<li><u>Be open to new problems and opportunities.</u></li>
-</ul>
-</section><section id="iterate-focus-or-pivot." class="slide level3">
-<h3>Iterate: Focus or Pivot.</h3>
-<p><img data-src="images/customer-development-process.png" style="width:80.0%" /></p>
-</section><section id="where-to-find-peopleprospects-to-interview" class="slide level3">
-<h3>Where to find people/prospects to interview?</h3>
-<ul>
-<li>Tap your social and professional network
-<ul>
-<li>LinkedIn, Email, contacts, etc.</li>
-<li>Expect a higher response (30-40%)</li>
-</ul></li>
-<li>Meetup Groups, Twitter, Facebook Groups, Reddit, Craigslist, Instagram, etc.
-<ul>
-<li>Expect a lower response rate (10-20%)</li>
-<li>Consider offering payment/gift card for an interview</li>
-</ul></li>
-</ul>
-</section><section id="how-many-interviews" class="slide level3">
-<h3>How Many Interviews?</h3>
-<ul>
-<li>As many as needed to in/validate assmptions.</li>
-<li>DISCOVERY TIP: <u>Aim to do 8-10 interviews for each customer type</u></li>
-<li>UX TIP: Customer Discovery can be combined with and supplement user testing.</li>
-</ul>
-</section><section id="debrief-review-and-summarize" class="slide level3">
-<h3>Debrief, Review and Summarize</h3>
-</section><section id="keep-a-living-customer-research-report" class="slide level3">
-<h3>Keep a <em>Living</em> “Customer Research” report</h3>
-</section><section id="track-your-assumptions" class="slide level3">
-<h3>Track your assumptions…</h3>
-<ul>
-<li>Google Doc / Spreadsheet / Airtable of all assumptions and hypotheses to validate and test.</li>
-<li>Record the status.</li>
-<li>Rank their importance (i.e. if invalidated, does it invalidate entire business?)</li>
-<li>Link to interviews you do and experiments you run.</li>
-</ul>
-<p>TIP: Validation Board from Lean Startup Machine.</p>
-</section><section id="run-lean-startup-marketplace-experiments" class="slide level3">
-<h3>Run Lean startup / marketplace experiments</h3>
-<ul>
-<li>When in doubt, don’t assume. Instead, test it!</li>
-<li>Examples:
-<ul>
-<li>Value hypothesis test = sell to target customers</li>
-<li>Growth hypothesis test = experiment with traction methods</li>
-</ul></li>
-</ul>
-</section><section id="customer-development-is-about-more-than-the-customer." class="slide level3">
-<h3>Customer development is about more than the customer.</h3>
-<ul>
-<li><p>It’s about exploring the dimensions of your business model and ecosystem in an inexpensive, agile and opportunistic way.</p></li>
-<li><p>It’s about testing the validity of your most important assumptions.</p></li>
-<li><p>It’s about dealing with your uncertainties.</p></li>
-</ul>
-</section></section>
-<section id="summary" class="title-slide slide level1"><h1>Summary</h1><ul>
-<li>All startups face uncertainties. Own your assumptions.</li>
-<li>Turn assumptions and guesses into facts and knowledge ASAP.</li>
-<li>Get out of the building (or into a zoom call!) and talk to customers.</li>
-<li>Customer Development is intended as a systematic process towards dealing with uncertainty and reaching product-market fit (i.e. products that matter, sell and that VC want to invest in).</li>
-</ul></section>
-<section id="section-4" class="title-slide slide level1"><h1></h1><blockquote>
-<p>No campaign plan survives first contact with the enemy - Field Marshall Helmuth Graf von Moltke</p>
-</blockquote>
-<blockquote>
-<p>No Plan Survives First Contact With Customers - Steve Blank</p>
-</blockquote></section>
-<section><section id="resources-references" class="title-slide slide level1"><h1>Resources / References</h1></section><section id="resources-and-book-recommendations" class="slide level3">
-<h3>Resources and Book Recommendations</h3>
-<ul>
-<li>Steve Blank &amp; Bob Dorf - Startup Owners Manual (2012)</li>
-<li>https://steveblank.com/tools-and-blogs-for-entrepreneurs/</li>
-<li>Dan Shapiro - Hot Seat (2015).</li>
-<li>David Rose - The Startup Checklist. (2016).</li>
-<li>Gabriel Weinberg - Traction: How Any Startup Can Achieve Explosive Customer Growth</li>
-<li>Blog www.markwk.com</li>
-<li>Slides: github.com/markwk.com/customer-dev-talk</li>
-</ul>
-</section><section id="additional-references" class="slide level3">
-<h3>Additional References</h3>
-<ul>
-<li>Bygrave, W. D., Lange, J., Mollov, A., Pearlmutter, M., &amp; Singh, S. (2007). Pre-startup formal business plans and post-startup performance: a study of 116 new ventures. Venture Capital Journal, 9(4), 1-20.</li>
-<li>Chesbrough, H., &amp; Rosenbloom, R. S. (2002). The role of the business model in capturing value from innovation: evidence from Xerox Corporation’s technology spin‐off companies. Industrial and corporate change, 11(3), 529-555.</li>
-</ul>
-</section></section>
-<section id="thanks" class="title-slide slide level1"><h1>Thanks</h1></section>
-<section id="section-5" class="title-slide slide level1"><h1></h1><p>Find me online at www.markwk.com!</p></section>
+        <section
+          id="customer-development-principles-and-tactics-for-startups"
+          class="slide level2"
+        >
+          <h2>
+            Customer Development <br />
+            Principles and Tactics<br />
+            for Startups
+          </h2>
+          <p>
+            Mark Koester | www.markwk.com <br />
+            Startup Boost, April 28, 2020<br /><br />
+            Slides and References: github.com/markwk/customer-dev-talk
+          </p>
+        </section>
+        <section id="slides" class="title-slide slide level1">
+          <h1>Slides:</h1>
+          <p>github.com/markwk/customer-dev-talk</p>
+        </section>
+        <section id="section" class="title-slide slide level1">
+          <h1></h1>
+          <blockquote>
+            <p>
+              The core of Customer Development is blissfully simple: Products
+              developed by founders who get out in front of customers early and
+              often, win.
+            </p>
+            <p><small>Steve Blank</small></p>
+          </blockquote>
+        </section>
+        <section id="agenda" class="title-slide slide level1">
+          <h1>Agenda</h1>
+          <ul>
+            <li>About Me</li>
+            <li>Key Concepts</li>
+            <li>Example / Story</li>
+            <li>Principles</li>
+            <li>Tactics</li>
+            <li>Resources</li>
+          </ul>
+        </section>
+        <section id="about-me" class="title-slide slide level1">
+          <h1>About Me</h1>
+          <p>Mark Koester</p>
+          <ul>
+            <li>
+              I’m a “Startup Generalist” who focuses on customers and product.
+            </li>
+            <li>Technical Consultant and PM @ Int3c.com</li>
+            <li>
+              Former: Regional Development (Greater China) at Techstars and Up
+              Global (acquired)
+            </li>
+            <li>
+              Blog: www.markwk.com | Products: www.markwk.com/products | Biz:
+              Int3c.com | Code: github.com/markwk
+            </li>
+          </ul>
+        </section>
+        <section>
+          <section id="key-concepts" class="title-slide slide level1">
+            <h1>Key Concepts</h1>
+            <p>(or my own assumptions for what we are taking about)</p>
+          </section>
+          <section class="slide level2">
+            <h3 id="startup">Startup</h3>
+            <blockquote>
+              <p>a series of untested hypothesis and assumptions</p>
+            </blockquote>
+            <aside class="notes">
+              <p>
+                Put another way:
+                <strong
+                  >Startups / founders / entrepreneurs exist to deal with
+                  uncertainty</strong
+                >.
+              </p>
+              <p>
+                Steve Blank and other have shown that traditional business
+                management processes and planning developed in MBA programs are
+                not suited for startups, because startups operate in uncertainy.
+              </p>
+              <blockquote>
+                <p>
+                  A startup is a temporary organization in search of a scalable,
+                  repeatable, profitable business model. (Blank, 2012)
+                </p>
+              </blockquote>
+              <blockquote>
+                <p>
+                  In sharp contrast, startups operate in “search” mode, seeking
+                  a repeatable and profitable business model. The search for a
+                  business model requires dramatically different rules,
+                  roadmaps, skill sets, and tools in order to minimize risk and
+                  optimize chances for success. (Blank, 2012)
+                </p>
+              </blockquote>
+              <p>
+                SEE: Blank, S. G., &amp; Dorf, B. (2012). The Startup Owner’s
+                Manual.
+              </p>
+            </aside>
+          </section>
+          <section class="slide level2">
+            <h3 id="customer-development">Customer Development</h3>
+            <blockquote>
+              <p>
+                a process to organize the search for a business model, find
+                product-market fit, understand your customers, etc.
+              </p>
+            </blockquote>
+            <p><br /></p>
+            <p>
+              <small
+                >Originated with Steve Blank and popularized by Eric Reis and
+                Lean Startup. Dovetails well with many aspects of UX.
+              </small>
+            </p>
+            <aside class="notes">
+              <p>
+                Steve Blank and others strive to make this an almost scientific
+                process but it still very much an art rather than a purely
+                empirical science.
+              </p>
+            </aside>
+          </section>
+          <section class="slide level2">
+            <h3 id="two-phases-of-customer-development">
+              Two Phases of Customer Development
+            </h3>
+            <ol type="1">
+              <li>
+                Customer discovery = “acquiring a deep understanding of customer
+                needs”
+              </li>
+              <li>
+                Customer validation = process to invalidate/prove other aspects
+                of your biz model like sales desire and traction channels
+              </li>
+            </ol>
+          </section>
+          <section class="slide level2">
+            <h3 id="pivot">Pivot</h3>
+            <ul>
+              <li>Change in one of more business model components</li>
+            </ul>
+            <p><br /></p>
+            <p>
+              <small
+                >Eric Ries / Lean Startup: a “structured course correction
+                designed to test a new fundamental hypothesis about the product,
+                strategy, and engine of growth.”</small
+              >
+            </p>
+            <aside class="notes"></aside>
+          </section>
+          <section class="slide level2">
+            <h3 id="section-1"></h3>
+            <blockquote>
+              <p>
+                In practice, startups begin with a set of initial hypotheses
+                (guesses), most of which will end up being wrong. Therefore,
+                focusing on execution and delivering a product or service based
+                on those initial, untested hypotheses is a going-out-of-business
+                strategy.
+              </p>
+              <p><small>Steve Blank</small></p>
+            </blockquote>
+            <p>
+              = Overemphasis on deliverables and product, underemphesis on users
+              and customers.
+            </p>
+            <aside class="notes">
+              <p>Overemphasis on deliverables and product</p>
+              <p>
+                Startups and entrepeneurs tend to focus on what we build, do and
+                deliver and forget to spend as much time, energy and thought on
+                customer discovery.
+              </p>
+            </aside>
+          </section>
+          <section class="slide level2">
+            <h3 id="objective-of-customer-development">
+              Objective of Customer Development
+            </h3>
+            <p>Turn assumptions and guesses into facts and knowledge ASAP.</p>
+            <aside class="notes">
+              <p>Best combined with agile product development</p>
+            </aside>
+          </section>
+          <section class="slide level2">
+            <h3 id="how-to-customer-development">
+              How-To Customer Development =
+            </h3>
+            <p>Talk to customers.</p>
+          </section>
+        </section>
+        <section id="example" class="title-slide slide level1">
+          <h1>Example</h1>
+          <ul>
+            <li>
+              Finding, Understanding and Selling Sponsorship Customers for Up
+              Global and Techstars in China (2014-2016)
+            </li>
+            <li>Assumptions from US</li>
+            <li>What I Did</li>
+            <li>Discoveries / Lessons Learned</li>
+          </ul>
+          <aside class="notes">
+            <ul>
+              <li>
+                Finding, Understanding and Selling Sponsorship Customers for Up
+                Global and Techstars in China (2014-2016)
+              </li>
+              <li>
+                Assumptions from US: We need a lot of events to get sponsorship,
+                i.e. event volume drives sponsorship.
+              </li>
+              <li>
+                Talked to nearly all of the existing, past and potential
+                sponsors.
+              </li>
+              <li>
+                Discovered we weren’t fulfilling various sponsorship needs for
+                Chinese Market.
+              </li>
+              <li>
+                Lessons Learned: Sponsorship match/alignment was more important
+                than volume and consistent business development could unlock
+                $$$.
+              </li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <section id="principles" class="title-slide slide level1">
+            <h1>Principles</h1>
+          </section>
+          <section id="markets-with" class="slide level3">
+            <h3>Markets with…</h3>
+            <ul>
+              <li>
+                Invention / Technology Risk (questionable if tech can be done or
+                invented).
+              </li>
+              <li>
+                Customer/Market Risk (unknown if customers will adopt and/or pay
+                product/service)
+              </li>
+            </ul>
+          </section>
+          <section id="customer-development-process" class="slide level3">
+            <h3>Customer Development Process</h3>
+            <p>
+              <img
+                data-src="images/customer-development-process.png"
+                style="width: 80%;"
+              />
+            </p>
+          </section>
+          <section id="customer-discovery-process" class="slide level3">
+            <h3>Customer Discovery Process</h3>
+            <p>
+              <img
+                data-src="images/customer-discovery-process.png"
+                style="width: 80%;"
+              />
+            </p>
+          </section>
+          <section id="customer-validation-process" class="slide level3">
+            <h3>Customer Validation Process</h3>
+            <p>
+              <img
+                data-src="images/customer-validation-process.png"
+                style="width: 80%;"
+              />
+            </p>
+          </section>
+          <section id="section-2" class="slide level3">
+            <h3></h3>
+            <p>The <u>key</u> to customer discovery…</p>
+            <h1>
+              TALKING
+            </h1>
+            <p>to customers</p>
+          </section>
+          <section id="section-3" class="slide level3">
+            <h3></h3>
+            <p>By understanding the <u>problem</u>, you can…</p>
+            <h2>
+              Understand the solution.
+            </h2>
+          </section>
+        </section>
+        <section>
+          <section id="tactics" class="title-slide slide level1">
+            <h1>Tactics</h1>
+          </section>
+          <section id="own-your-assumptions." class="slide level3">
+            <h3>Own your assumptions.</h3>
+            <ul>
+              <li>
+                What are your assumptions that, if invalidated, will break the
+                business?
+              </li>
+              <li>
+                Business Model Canvas = use to lay out your key assumptions to
+                test
+              </li>
+              <li>
+                Market Sizing = talk to customers from your target markets, use
+                to explore definition of markets (overall, addressable and
+                target)
+              </li>
+            </ul>
+          </section>
+          <section id="get-out-of-the-building." class="slide level3">
+            <h3>Get out of the Building.</h3>
+          </section>
+          <section
+            id="focus-on-learning-and-helping-rather-than-selling"
+            class="slide level3"
+          >
+            <h3>Focus on learning and helping, rather than selling</h3>
+          </section>
+          <section id="customer-interview" class="slide level3">
+            <h3>Customer Interview</h3>
+            <ol type="1">
+              <li>Person</li>
+              <li>Problem</li>
+              <li>Solution</li>
+            </ol>
+          </section>
+          <section id="mvp-house" class="slide level3">
+            <h3>MVP House</h3>
+            <p><img data-src="images/mvp-house.png" style="width: 80%;" /></p>
+          </section>
+          <section id="the-person" class="slide level3">
+            <h3>1. The Person</h3>
+            <ul>
+              <li>Who are they? What is their role? Backgound? Etc.</li>
+              <li>
+                If business product, who is their boss? who works for them?
+              </li>
+              <li>What is a typical day like? How do they spend their time?</li>
+            </ul>
+            <p>
+              <u
+                >Goal: Get a broad background understanding of the person.
+                Develop a relationship. Stay broad.</u
+              >
+            </p>
+          </section>
+          <section id="the-problem" class="slide level3">
+            <h3>2. The Problem</h3>
+            <ul>
+              <li>
+                Learn about the problems that person recognizes and verbalizes.
+              </li>
+              <li>What are the top three challenges they face?</li>
+              <li>What is frustrating, expensive or time consuming?</li>
+              <li>What would they change right now?</li>
+              <li>
+                How are they solving them? Competitors? DIY tools and
+                workarounds?
+              </li>
+            </ul>
+            <p>
+              <u
+                >Goal: Get them to verbalize the problem you want to solve
+                (preferrably unprompted)</u
+              >
+            </p>
+          </section>
+          <section id="the-solution" class="slide level3">
+            <h3>3. The Solution</h3>
+            <ul>
+              <li>
+                Assuming you’ve gotten them to identify with your problem, then…
+              </li>
+              <li>
+                Reveal your solution (either as a concept or prototype or
+                product)
+              </li>
+              <li>
+                Read their reactions as well as their words to capturee their
+                level of interest.
+              </li>
+              <li>HINT: “That’s interesting” = kiss of death</li>
+            </ul>
+            <p>
+              <u
+                >Goal: Discover if they want your solution and gather
+                feedback.</u
+              >
+            </p>
+          </section>
+          <section id="tips-for-customer-interviews-1" class="slide level3">
+            <h3>Tips for Customer Interviews (1)</h3>
+            <ul>
+              <li>Turn assumptions into customer questions.</li>
+              <li>Create a script of your key questions.</li>
+              <li>
+                Work as team (customer development is the job of entire founding
+                team).
+              </li>
+              <li>Take detailed notes (and consider recording)</li>
+              <li>Use a Google form to log key responses.</li>
+              <li>
+                Be empathetic with interviewee and go off script when needed.
+              </li>
+              <li>
+                <u
+                  >If they are excited about something, ask if they’ll pay
+                  for</u
+                >.
+              </li>
+            </ul>
+          </section>
+          <section id="tips-for-customer-interviews-2" class="slide level3">
+            <h3>Tips for Customer Interviews (2)</h3>
+            <ul>
+              <li>Be open-ended.</li>
+              <li>
+                Show them early prototypes (if you have them and if they
+                indicated a desire for it).
+              </li>
+              <li>Always follow-up.</li>
+              <li>
+                End with an ask (intro to someone else to interview, join
+                mailing list, etc.).
+              </li>
+              <li>
+                Review and Summarize, esp Extract key quotes and look for
+                patterns and clusters
+              </li>
+              <li><u>Be open to new problems and opportunities.</u></li>
+            </ul>
+          </section>
+          <section id="iterate-focus-or-pivot." class="slide level3">
+            <h3>Iterate: Focus or Pivot.</h3>
+            <p>
+              <img
+                data-src="images/customer-development-process.png"
+                style="width: 80%;"
+              />
+            </p>
+          </section>
+          <section
+            id="where-to-find-peopleprospects-to-interview"
+            class="slide level3"
+          >
+            <h3>Where to find people/prospects to interview?</h3>
+            <ul>
+              <li>
+                Tap your social and professional network
+                <ul>
+                  <li>LinkedIn, Email, contacts, etc.</li>
+                  <li>Expect a higher response (30-40%)</li>
+                </ul>
+              </li>
+              <li>
+                Meetup Groups, Twitter, Facebook Groups, Reddit, Craigslist,
+                Instagram, etc.
+                <ul>
+                  <li>Expect a lower response rate (10-20%)</li>
+                  <li>Consider offering payment/gift card for an interview</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section id="how-many-interviews" class="slide level3">
+            <h3>How Many Interviews?</h3>
+            <ul>
+              <li>As many as needed to in/validate assmptions.</li>
+              <li>
+                DISCOVERY TIP:
+                <u>Aim to do 8-10 interviews for each customer type</u>
+              </li>
+              <li>
+                UX TIP: Customer Discovery can be combined with and supplement
+                user testing.
+              </li>
+            </ul>
+          </section>
+          <section id="debrief-review-and-summarize" class="slide level3">
+            <h3>Debrief, Review and Summarize</h3>
+          </section>
+          <section
+            id="keep-a-living-customer-research-report"
+            class="slide level3"
+          >
+            <h3>Keep a <em>Living</em> “Customer Research” report</h3>
+          </section>
+          <section id="track-your-assumptions" class="slide level3">
+            <h3>Track your assumptions…</h3>
+            <ul>
+              <li>
+                Google Doc / Spreadsheet / Airtable of all assumptions and
+                hypotheses to validate and test.
+              </li>
+              <li>Record the status.</li>
+              <li>
+                Rank their importance (i.e. if invalidated, does it invalidate
+                entire business?)
+              </li>
+              <li>Link to interviews you do and experiments you run.</li>
+            </ul>
+            <p>TIP: Validation Board from Lean Startup Machine.</p>
+          </section>
+          <section
+            id="run-lean-startup-marketplace-experiments"
+            class="slide level3"
+          >
+            <h3>Run Lean startup / marketplace experiments</h3>
+            <ul>
+              <li>When in doubt, don’t assume. Instead, test it!</li>
+              <li>
+                Examples:
+                <ul>
+                  <li>Value hypothesis test = sell to target customers</li>
+                  <li>
+                    Growth hypothesis test = experiment with traction methods
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section
+            id="customer-development-is-about-more-than-the-customer."
+            class="slide level3"
+          >
+            <h3>Customer development is about more than the customer.</h3>
+            <ul>
+              <li>
+                <p>
+                  It’s about exploring the dimensions of your business model and
+                  ecosystem in an inexpensive, agile and opportunistic way.
+                </p>
+              </li>
+              <li>
+                <p>
+                  It’s about testing the validity of your most important
+                  assumptions.
+                </p>
+              </li>
+              <li><p>It’s about dealing with your uncertainties.</p></li>
+            </ul>
+          </section>
+        </section>
+        <section id="summary" class="title-slide slide level1">
+          <h1>Summary</h1>
+          <ul>
+            <li>All startups face uncertainties. Own your assumptions.</li>
+            <li>Turn assumptions and guesses into facts and knowledge ASAP.</li>
+            <li>
+              Get out of the building (or into a zoom call!) and talk to
+              customers.
+            </li>
+            <li>
+              Customer Development is intended as a systematic process towards
+              dealing with uncertainty and reaching product-market fit
+              (i.e. products that matter, sell and that VC want to invest in).
+            </li>
+          </ul>
+        </section>
+        <section id="section-4" class="title-slide slide level1">
+          <h1></h1>
+          <blockquote>
+            <p>
+              No campaign plan survives first contact with the enemy - Field
+              Marshall Helmuth Graf von Moltke
+            </p>
+          </blockquote>
+          <blockquote>
+            <p>No Plan Survives First Contact With Customers - Steve Blank</p>
+          </blockquote>
+        </section>
+        <section>
+          <section id="resources-references" class="title-slide slide level1">
+            <h1>Resources / References</h1>
+          </section>
+          <section id="resources-and-book-recommendations" class="slide level3">
+            <h3>Resources and Book Recommendations</h3>
+            <ul>
+              <li>Steve Blank &amp; Bob Dorf - Startup Owners Manual (2012)</li>
+              <li>https://steveblank.com/tools-and-blogs-for-entrepreneurs/</li>
+              <li>Dan Shapiro - Hot Seat (2015).</li>
+              <li>David Rose - The Startup Checklist. (2016).</li>
+              <li>
+                Gabriel Weinberg - Traction: How Any Startup Can Achieve
+                Explosive Customer Growth
+              </li>
+              <li>Blog www.markwk.com</li>
+              <li>Slides: github.com/markwk.com/customer-dev-talk</li>
+            </ul>
+          </section>
+          <section id="additional-references" class="slide level3">
+            <h3>Additional References</h3>
+            <ul>
+              <li>
+                Bygrave, W. D., Lange, J., Mollov, A., Pearlmutter, M., &amp;
+                Singh, S. (2007). Pre-startup formal business plans and
+                post-startup performance: a study of 116 new ventures. Venture
+                Capital Journal, 9(4), 1-20.
+              </li>
+              <li>
+                Chesbrough, H., &amp; Rosenbloom, R. S. (2002). The role of the
+                business model in capturing value from innovation: evidence from
+                Xerox Corporation’s technology spin‐off companies. Industrial
+                and corporate change, 11(3), 529-555.
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section id="thanks" class="title-slide slide level1">
+          <h1>Thanks</h1>
+        </section>
+        <section id="section-5" class="title-slide slide level1">
+          <h1></h1>
+          <p>Find me online at www.markwk.com!</p>
+        </section>
+      </div>
     </div>
-  </div>
 
-  <script src="https://revealjs.com/js/reveal.js"></script>
+    <script src="reveal.js/js/reveal.js"></script>
 
-  <script>
-
+    <script>
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
@@ -350,11 +692,16 @@ Understand the solution.
 
         // Optional reveal.js plugins
         dependencies: [
-          { src: 'https://revealjs.com/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'https://revealjs.com/plugin/zoom-js/zoom.js', async: true },
-          { src: 'https://revealjs.com/plugin/notes/notes.js', async: true }
-        ]
+          {
+            src: "reveal.js/lib/js/classList.js",
+            condition: function () {
+              return !document.body.classList;
+            },
+          },
+          { src: "reveal.js/plugin/zoom-js/zoom.js", async: true },
+          { src: "reveal.js/plugin/notes/notes.js", async: true },
+        ],
       });
     </script>
-    </body>
+  </body>
 </html>
