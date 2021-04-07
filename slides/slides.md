@@ -1,14 +1,15 @@
 ---
 author: Mark Koester
 title: Customer Development
-date: Startup Boost, April 28, 2020
+date: Startup Boost, April 2021
 ---
 
 ## Customer Development <br/> Principles and Tactics<br/> for Startups
 
 <p>Mark Koester | www.markwk.com <br/>
-Startup Boost, April 28, 2020<br/><br/>
+Startup Boost, April 2021<br/><br/>
 Slides and References: github.com/markwk/customer-dev-talk</p>
+
 
 
 
@@ -16,17 +17,13 @@ Slides and References: github.com/markwk/customer-dev-talk</p>
 
 github.com/markwk/customer-dev-talk
 
-#
 
-> The core of Customer Development is blissfully simple: Products developed by founders who get out in front of customers early and often, win. 
->
-> <small>Steve Blank</small>
 
 # Agenda
 
 - About Me
 - Key Concepts
-- Example / Story
+- Examples and Samples
 - Principles
 - Tactics
 - Resources
@@ -35,10 +32,25 @@ github.com/markwk/customer-dev-talk
 
 Mark Koester
 
-- I'm a "Startup Generalist" who focuses on customers and product. 
-- Technical Consultant and PM @ Int3c.com
+- Product Designer / Dev / Head of Product / Human-Centered
 - Former: Regional Development (Greater China) at Techstars and Up Global (acquired)
 - Blog: www.markwk.com | Products: www.markwk.com/products | Biz: Int3c.com | Code: github.com/markwk
+
+
+
+#
+
+All successful businesses are built on solving their customer problems better than the competition. 
+
+
+
+#
+
+![](images/messy-creativity.jpg){ width=80%}
+
+The process towards understanding your customers and building innovative products and services for them is <u>messy</u> and that's ok. 
+
+
 
 # Key Concepts
 
@@ -141,30 +153,85 @@ Best combined with agile product development
 
 
 
+# UX
+
+
+
 -------
 
-### How-To Customer Development = 
+### What is USER EXPERIENCE (UX)?
 
-Talk to customers. 
-
-
-
-# Example
-
-- Finding, Understanding and Selling Sponsorship Customers for Up Global and Techstars in China (2014-2016)
-- Assumptions from US
-- What I Did
-- Discoveries / Lessons Learned
+The entire experience and interactions that an individual has around a product or service.
 
 ::: notes
 
-- Finding, Understanding and Selling Sponsorship Customers for Up Global and Techstars in China (2014-2016)
-- Assumptions from US: We need a lot of events to get sponsorship, i.e. event volume drives sponsorship.
-- Talked to nearly all of the existing, past and potential sponsors. 
-- Discovered we weren't fulfilling various sponsorship needs for Chinese Market. 
-- Lessons Learned: Sponsorship match/alignment was more important than volume and consistent business development could unlock $$$. 
+::: 
 
-:::
+
+
+-------
+
+### Why UX
+
+UX is broadly speaking a design practice aimed at understanding customers or users and designing, testing and building products and services with and for those users. 
+
+At the heart of UX is being user or <u>human-centric</u>. 
+
+::: notes
+
+::: 
+
+
+
+
+
+-------
+
+### UX Process
+
+![](images/ux-process.png){ width=80%}
+
+::: notes
+
+::: 
+
+
+
+#
+
+![](images/three-questions.png){ width=60%}
+
+Your three most important questions
+
+::: notes
+
+::: 
+
+
+
+
+
+-------
+
+### Who and What Questions
+
+![](images/who-what-question.png){ width=60%}
+
+
+
+-------
+
+### The "How" Question is for later...
+
+![](images/how-question.png){ width=60%}
+
+
+
+
+
+# Examples and Samples
+
+
 
 
 
@@ -227,7 +294,7 @@ By understanding the <u>problem</u>, you can...
 
 
 
-### Get out of the Building.
+### Talk to your customers
 
 
 
@@ -235,7 +302,7 @@ By understanding the <u>problem</u>, you can...
 
 
 
-### Customer Interview
+### Customer Interview Approach
 
 1. Person
 2. Problem 
@@ -246,6 +313,12 @@ By understanding the <u>problem</u>, you can...
 ### MVP House
 
 ![](images/mvp-house.png){ width=80%}
+
+
+
+### Customer Interview 5-Act Script
+
+![](images/interview-script-starter.jpg){ width=60%}
 
 
 
@@ -349,12 +422,22 @@ TIP: Validation Board from Lean Startup Machine.
 
 
 
+### UX Research and Design
+
+- Start with a wireframe or prototype. 
+- UX Research involves a systematic approach to qualitative research towards validating user needs. 
+- UX Design is a model of iterative design towards human-centered solutions for your product or service. 
+
+
+
 ### Run Lean startup / marketplace experiments
 
 - When in doubt, don't assume. Instead, test it! 
 - Examples:
   - Value hypothesis test = sell to target customers 
   - Growth hypothesis test = experiment with traction methods
+
+
 
 
 
@@ -367,43 +450,38 @@ TIP: Validation Board from Lean Startup Machine.
 
 
 
+#
+
+**Thinking = Diverge and Converge** 
+
+![](images/creativity-process.png){ width=80%}
+
+(Double Diamond of Design Thinking)
+
+Remember that creative thinking involves an oscillating process. 
+
+
+
 # Summary
 
 - All startups face uncertainties. Own your assumptions. 
-- Turn assumptions and guesses into facts and knowledge ASAP. 
-- Get out of the building (or into a zoom call!) and talk to customers. 
-- Customer Development is intended as a systematic process towards dealing with uncertainty and reaching product-market fit (i.e. products that matter, sell and that VC want to invest in). 
+- Turn assumptions into hypthoeses and your hypthoses into facts and knowledge ASAP. 
+- Always Be Talking To Your Customers. 
+- Embrace the messy process. 
 
 
 
 #
 
-> No campaign plan survives first contact with the enemy - Field Marshall Helmuth Graf von Moltke
-
->  No Plan Survives First Contact With Customers - Steve Blank
+All successful businesses are built on solving their customer problems better than the competition. 
 
 
 
 # Resources / References
 
+![](images/recommended-books.png){ width=60%}
 
 
-### Resources and Book Recommendations
-
-- Steve Blank & Bob Dorf - Startup Owners Manual (2012)
-- https://steveblank.com/tools-and-blogs-for-entrepreneurs/
-- Dan Shapiro - Hot Seat (2015). 
-- David Rose - The Startup Checklist. (2016).
-- Gabriel Weinberg - Traction: How Any Startup Can Achieve Explosive Customer Growth
-- Blog www.markwk.com 
-- Slides: github.com/markwk.com/customer-dev-talk
-
-
-
-### Additional References
-
-- Bygrave, W. D., Lange, J., Mollov, A., Pearlmutter, M., & Singh, S. (2007). Pre-startup formal business plans and post-startup performance: a study of 116 new ventures. Venture Capital Journal, 9(4), 1-20.
-- Chesbrough, H., & Rosenbloom, R. S. (2002). The role of the business model in capturing value from innovation: evidence from Xerox Corporation’s technology spin‐off companies. Industrial and corporate change, 11(3), 529-555.
 
 
 
